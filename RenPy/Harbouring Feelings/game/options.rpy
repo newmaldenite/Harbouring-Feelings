@@ -19,6 +19,9 @@ define config.name = _("Harbouring Feelings")
 ## this to False to hide the title.
 
 define gui.show_name = True
+define gui.text_font = "fonts/DarwinSerif-Regular.ttf"  # Set default text font
+define gui.name_text_font = "fonts/DarwinSerif-Regular.ttf"  # Set name font
+define gui.interface_text_font = "fonts/DarwinSerif-Regular.ttf"  # Set UI menu font
 
 
 ## The version of the game.

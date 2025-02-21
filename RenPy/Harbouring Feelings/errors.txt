@@ -1,1 +1,10 @@
-﻿
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Harbouring.rpy", line 185: expected statement.
+    music.fadeout(3.0) 
+                       ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Fri Feb 21 10:20:39 2025

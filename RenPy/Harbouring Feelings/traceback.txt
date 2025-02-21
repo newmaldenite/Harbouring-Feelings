@@ -1,34 +1,74 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 13, in script call
-    call harbouring
-  File "game/Harbouring.rpy", line 107, in script
-    scene bg docks night with fade
-Exception: Image 'bg docks' does not accept attributes 'night'.
+  File "game/Harbouring.rpy", line 40, in execute
+    screen main_menu():
+  File "game/Harbouring.rpy", line 40, in execute
+    screen main_menu():
+  File "game/Harbouring.rpy", line 44, in execute
+    frame:
+  File "game/Harbouring.rpy", line 48, in execute
+    vbox:
+  File "game/Harbouring.rpy", line 49, in execute
+    textbutton "Start" action [
+  File "game/Harbouring.rpy", line 49, in keywords
+    textbutton "Start" action [
+  File "game/Harbouring.rpy", line 51, in <module>
+    Function(renpy.music.register_channel("game_music", "music")),
+Exception: Can't register channel outside of init phase.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 13, in script call
-    call harbouring
-  File "game/Harbouring.rpy", line 107, in script
-    scene bg docks night with fade
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\ast.py", line 1251, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\ast.py", line 1080, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 477, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\displayable.py", line 249, in _duplicate
-    args.extraneous()
-  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'bg docks' does not accept attributes 'night'.
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/Harbouring.rpy", line 40, in execute
+    screen main_menu():
+  File "game/Harbouring.rpy", line 40, in execute
+    screen main_menu():
+  File "game/Harbouring.rpy", line 44, in execute
+    frame:
+  File "game/Harbouring.rpy", line 48, in execute
+    vbox:
+  File "game/Harbouring.rpy", line 49, in execute
+    textbutton "Start" action [
+  File "game/Harbouring.rpy", line 49, in keywords
+    textbutton "Start" action [
+  File "game/Harbouring.rpy", line 51, in <module>
+    Function(renpy.music.register_channel("game_music", "music")),
+  File "C:\Users\nicky\Downloads\renpy-8.3.4-sdk\renpy-8.3.4-sdk\renpy\audio\audio.py", line 931, in register_channel
+    raise Exception("Can't register channel outside of init phase.")
+Exception: Can't register channel outside of init phase.
 
 Windows-10-10.0.22000 AMD64
 Ren'Py 8.3.4.24120703
 Harbouring Feelings 1.0
-Thu Feb 20 14:29:26 2025
+Thu Feb 20 23:55:27 2025
