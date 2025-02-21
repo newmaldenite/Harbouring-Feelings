@@ -1,4 +1,4 @@
-var cacheName = 'harbouring-feelings';
+var cacheName = 'harbouring-feelings-a-docker-story';
 
 /* Start the service worker and cache all of the app's content or use the existing one */
 self.addEventListener('install', function (e) {
