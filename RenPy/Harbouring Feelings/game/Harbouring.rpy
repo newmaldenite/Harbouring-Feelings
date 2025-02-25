@@ -63,7 +63,7 @@ label harbouring:
     // app.js
     console.log("Hello from our container!");
     """) with dissolve
-    pause 1.5
+    pause 4.0
     hide screen code_display
 
     j "That’s... simple. I thought it would be more complicated."
@@ -77,7 +77,7 @@ label harbouring:
     COPY app.js /app.js
     CMD ["node", "app.js"]
     """) with dissolve
-    pause 2.0
+    pause 5.0
     hide screen code_display
 
     m "Now, what's the FIRST line we need in a Dockerfile?"
@@ -108,7 +108,7 @@ label harbouring:
     j "R-right. Uh... so the command is?"
 
     show screen code_display("docker build -t my-container .") with dissolve
-    pause 1.0
+    pause 4.0
     hide screen code_display
 
     m "What does the '-t' flag do in this command?"
@@ -134,7 +134,7 @@ label harbouring:
     j "A-and then we... run it? Like starting the journey?"
 
     show screen code_display("docker run my-container") with dissolve
-    pause 1.0
+    pause 4.0
     hide screen code_display
 
     show mai blush with dissolve
