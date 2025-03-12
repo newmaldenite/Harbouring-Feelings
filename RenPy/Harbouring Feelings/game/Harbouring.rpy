@@ -38,7 +38,7 @@ label harbouring:
     scene bg docks with fade
     stop music fadeout 1.0
     play music "audio/bgm.mp3" fadein 2.0
-    $ renpy.music.set_volume(0.3, delay=0.5)  # 50% volume
+    $ renpy.music.set_volume(0.1, delay=0.5)  # 10% volume
     show jiro neutral at right
     show mai neutral at left
 
