@@ -38,7 +38,7 @@ label harbouring:
     scene bg docks with fade
     stop music fadeout 1.0
     play music "audio/bgm.mp3" fadein 2.0
-    $ renpy.music.set_volume(0.1, delay=0.5)  # 10% volume
+    $ renpy.music.set_volume(0.3, delay=0.5)  # 30% volume
     show jiro neutral at right
     show mai neutral at left
 
@@ -163,7 +163,7 @@ label harbouring:
     j "O-of course! Haha... Just Docker..."
     "He scratches the back of his head."
 
-    play sound "ship_horn.ogg" volume 0.2
+    play sound "ship_horn.ogg" volume 0.1
     # scene bg docks night with fade
     "The ship’s horn blares as it departs, carrying its containers across the waves."
     "And yet, another kind of cargo remained—unspoken words, waiting for the right time to be sent."
