@@ -1,8 +1,8 @@
-2025-03-12 23:00:07 UTC
+2025-03-14 23:08:49 UTC
 Windows-10-10.0.22000
 Ren'Py 8.3.4.24120703
 
-Early init took 0.06s
+Early init took 0.05s
 Loading error handling took 0.02s
 Loading script took 0.07s
 Loading save slot metadata took 0.02s
@@ -15,10 +15,10 @@ Index archives took 0.00s
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
+Initial gc took 0.03s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
 Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s

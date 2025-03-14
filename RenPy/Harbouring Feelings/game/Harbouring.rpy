@@ -163,7 +163,7 @@ label harbouring:
     j "O-of course! Haha... Just Docker..."
     "He scratches the back of his head."
 
-    play sound "ship_horn.ogg" volume 0.5
+    play sound "ship_horn.ogg" volume 0.2
     # scene bg docks night with fade
     "The ship’s horn blares as it departs, carrying its containers across the waves."
     "And yet, another kind of cargo remained—unspoken words, waiting for the right time to be sent."
